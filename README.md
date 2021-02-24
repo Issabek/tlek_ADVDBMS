@@ -32,3 +32,23 @@ This technologies are going to be used in our website:
 * [.net Framework] - backEnd 
 * [sqlite3] - backEnd
 
+### Questions
+
+1. How can I register on the site? 
+2. What roles are available on the site (moderator, user, etc.)? 
+3. What is the difference between an authorized user and an unauthorized one? 
+4. How is the book search process going? 
+5. What features do moderators have? 
+6. How does the process of adding books to the wish list work? 
+7. What is the difference between a regular user and a moderator? 
+8. How is the division of books by author? 
+9. How are books divided by genre? 
+10. How do book recommendations work? 
+11. How to display the comments to the books? 
+12. What will be in the site menu? 
+13. How does the book rating work? 
+14. How does a "favorites"? 
+15. What features does a regular user have?
+
+### Dataset
+https://www.kaggle.com/bahramjannesarr/goodreads-book-datasets-10m
