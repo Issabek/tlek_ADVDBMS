@@ -1,0 +1,3 @@
+--What is the difference between an authorized user and an unauthorized one?
+--authorized user: see all ratings, enroll in the ratings, add to wishlist and so on
+--unauthorized user: can't see such things
