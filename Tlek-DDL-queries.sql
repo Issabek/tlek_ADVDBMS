@@ -3,10 +3,11 @@ create table interactions(
     item_id int NOT null,
     progress int8 not null,
     rating float, 
-    isFavorite BOOLEAN NULL CHECK (isFavorite IN (0,1)),
+    isFavorite BOOLEAN NULL ,
     start_date date not null,
     FOREIGN KEY (user_id) REFERENCES users(user_id),
-    FOREIGN KEY (item_id) REFERENCES items(id)
+    FOREIGN KEY (item_id) REFERENCES items(id),
+    CHECK (isFavorite IN (0,1))
     );
 
 create table items(
