@@ -3,10 +3,11 @@ create table interactions(
     item_id int NOT null,
     progress int8 not null,
     rating float, 
+    isFavorite bool null,
     start_date date not null,
     FOREIGN KEY (user_id) REFERENCES users(user_id),
     FOREIGN KEY (item_id) REFERENCES items(id)
-);
+    );
 
 create table items(
     id int NOT null,
@@ -25,3 +26,27 @@ create table users(
 );
 
 
+create table wishlist(
+    user_id int not null, 
+    item_id int NOT null,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (item_id) REFERENCES items(id)
+);
+
+create table rating(
+    user_id int not null, 
+    item_id int NOT null,
+    user_rating int not null,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (item_id) REFERENCES items(id)
+);
+
+
+create table comments(
+    user_id int not null,
+    item_id int not null, 
+    context varchar(255) not null, 
+    created_date date not null,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (item_id) REFERENCES items(id)
+);
