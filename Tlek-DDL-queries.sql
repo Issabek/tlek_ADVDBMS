@@ -48,3 +48,11 @@ create table comments(
     FOREIGN KEY (item_id) REFERENCES items(id)
 );
 
+create table rating(
+    user_id int not null, 
+    item_id int NOT null,
+    user_rating int not null,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (item_id) REFERENCES items(id)
+);
+
