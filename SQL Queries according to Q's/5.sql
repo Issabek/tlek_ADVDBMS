@@ -1,0 +1,2 @@
+--What features do moderators have?
+--moderators can delete others ratings, update books

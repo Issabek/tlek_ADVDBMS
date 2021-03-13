@@ -1,0 +1,3 @@
+--What is the difference between a regular user and a moderator?
+--moderators can delete others ratings, update books
+--simple users cannot do that
