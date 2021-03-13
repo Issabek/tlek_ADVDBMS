@@ -43,6 +43,6 @@ create table comments(
     user_id int not null, 
     context varchar(255) not null, 
     created_date date not null,
-    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
