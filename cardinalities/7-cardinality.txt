@@ -1,0 +1,6 @@
+SELECT COUNT(*) FROM books 
+WHERE compare_text(authors, p_query_author) = 1 
+AND compare_text(title, p_query_title) = 1;
+
+|T'|=9000/112*9000=0 tuple;
+Time: 0.010487928495198154 seconds

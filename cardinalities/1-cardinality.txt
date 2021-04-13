@@ -1,0 +1,7 @@
+SELECT COUNT(*) 
+FROM users 
+WHERE password = p_password AND password 
+IN (SELECT password FROM users WHERE login = p_login); 
+
+|T'|=3220/3220*3220=0 tuple;
+Time: 0.00401548767089844 seconds

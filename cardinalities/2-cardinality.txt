@@ -1,0 +1,17 @@
+SELECT books.title, admin.action_date, books.authors, books.publisher 
+FROM admin_books_log admin INNER JOIN books 
+ON admin.title= books.title 
+AND admin.authors = books.authors;
+
+--(books * admin_books_log)
+SELECT COUNT(*) from books, admin_books_log
+WHERE admin.title= books.title
+AND admin.authors = books.authors; 800*9000/9000*112 = 7 tuples
+
+--(admin_books_log * books)
+SELECT COUNT(*) from admin_books_log, books
+WHERE books.title=admin.title
+AND books.authors=admin.authors;  800*9000/9000*112 = 7 tuples
+
+|T'| = 7+7=14 tuples;
+Time: 0.002159852753456747 seconds

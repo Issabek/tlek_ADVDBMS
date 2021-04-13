@@ -1,0 +1,5 @@
+SELECT COUNT(*) 
+FROM books WHERE publisher = p_login ; kinda sensetive moment cuz publisher is custom input
+
+|T'| = 9000/84=107 tuples;
+Time: 0.004568512368713754 seconds

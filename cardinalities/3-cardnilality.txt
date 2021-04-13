@@ -1,0 +1,5 @@
+SELECT COUNT(*) 
+FROM books; 
+
+|T'| = 9000 / 1 = 9000 tuples;
+Time: 0.019002437595552734 seconds
