@@ -2,4 +2,22 @@ SELECT COUNT(*)
 FROM books; 
 
 |T'| = 9000 / 1 = 9000 tuples;
-Time: 0.019002437595552734 seconds
+
+Experiment 1: 
+Time: 19.002437595552734 ms
+
+Experiment 2: 
+Time: 65.699907718203202 ms
+
+Experiment 3: 
+Time: 31.753443999706442 ms
+
+Experiment 4: 
+Time: 18.728208646298911 ms
+
+Experiment 5: 
+Time: 21.287832015738251 ms
+
+156,4718299755 / 5 = 31,2943659951 
+
+Average runtime: 31,2943659951 ms
