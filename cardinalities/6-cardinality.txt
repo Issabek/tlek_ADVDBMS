@@ -2,4 +2,22 @@ SELECT COUNT(*) as v_text
 FROM books WHERE publisher = p_login; 
 
 |T'| = 9000/84=107 tuples;
-Time: 0.004568512368713754 seconds
+
+Experiment 1:
+Time: 0.461658127309151 ms
+
+Experiment 2:
+Time: 1.323040521898856 ms
+
+Experiment 3:
+Time: 2.358143442483627 ms
+
+Experiment 4:
+Time: 0.289808169460390 ms
+
+Experiment 5:
+Time: 1.862856726160139 ms
+
+6,2955069873 / 5 = 1,2591013975
+
+Average runtime: 1,2591013975 ms
