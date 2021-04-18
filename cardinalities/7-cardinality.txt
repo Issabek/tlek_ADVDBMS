@@ -3,4 +3,22 @@ WHERE compare_text(authors, p_query_author) = 1
 AND compare_text(title, p_query_title) = 1;
 
 |T'|=9000/112*9000=0 tuple;
-Time: 0.010487928495198154 seconds
+
+Experiment 1:
+Time: 10.893638751763621 ms
+
+Experiment 2:
+Time: 7.803670878744072 ms
+
+Experiment 3:
+Time: 14.140577187384180 ms
+
+Experiment 4:
+Time: 4.284981680353022 ms
+
+Experiment 5:
+Time: 8.111014241616488 ms
+
+45,2338827399 / 5 = 9,046776548
+
+Average runtime: 9,046776548 ms
