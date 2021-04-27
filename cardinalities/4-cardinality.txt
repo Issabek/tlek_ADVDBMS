@@ -2,4 +2,22 @@ SELECT COUNT(*)
 FROM books WHERE ratings_count > 0; 
 
 |T'| = 9000/6741=1 tuple;
-Time: 0.003745965842862426 seconds
+
+Experiment 1:
+Time: 3.745965842862426 ms
+
+Experiment 2:
+Time: 0.910584547135482 ms
+
+Experiment 3:
+Time: 2.943711365071581 ms
+
+Experiment 4:
+Time: 1.890042043894550 ms
+
+Experiment 5:
+Time: 2.113830494779233 ms
+
+11,6041342937 / 5 = 2,3208268587
+
+Average runtime: 2,3208268587 ms

@@ -4,4 +4,22 @@ WHERE password = p_password AND password
 IN (SELECT password FROM users WHERE login = p_login); 
 
 |T'|=3220/3220*3220=0 tuple;
-Time: 0.00401548767089844 seconds
+
+Experiment 1: 
+Time: 4.01548767089844 ms
+
+Experiment 2:
+Time: 4.29294630836221 ms
+
+Experiment 3:
+Time: 3.61210245796682 ms
+
+Experiment 4:
+Time: 5.59887123994359 ms
+
+Experiment 5:
+Time: 4.26173776806287 ms
+
+21,7811454452 / 5 = 4,356229089
+
+Average runtime = 4,356229089 ms
